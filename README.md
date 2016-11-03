@@ -8,16 +8,16 @@
 
 ---
 
-- 安装mongodb完成相关配置;
-----
+安装mongodb完成相关配置;
+
 启动数据库`mongod`
 
-运行 app.js
+运行 app.js 即可
 
 学习中遇到的各种坑，详情见：<a href="http://hanekaoru.com/?p=1367" target="_blank">遇到的相关问题汇总</a>
 
 
-后续：
----- 
+## 后续：
+
 完善网站功能（待填坑）
 
