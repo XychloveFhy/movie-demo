@@ -14,7 +14,7 @@
 
 运行 app.js 即可
 
-学习中遇到的各种坑，详情见：<a href="http://hanekaoru.com/?p=1367" target="_blank">遇到的相关问题汇总</a>
+建了一个问题贴，详情见：<a href="http://hanekaoru.com/?p=1367" target="_blank">遇到的相关问题汇总</a>
 
 
 ## 后续：
