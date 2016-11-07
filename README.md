@@ -4,7 +4,7 @@
 
 基本路由也能跑通，注释很全，几乎涵盖了各个路由的设置，作用，和所涉及的到一些模块的方法使用等
 
-node_modules下有相应依赖，也可以自己配置package.json
+node_modules下有相应依赖，也可以自行配置package.json
 
 ---
 
