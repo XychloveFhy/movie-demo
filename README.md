@@ -1,4 +1,4 @@
-## NodeJs学习笔记
+## a MovieDemo by node(express + mongodb + jade)
 
 练手项目，也算是第一个比较完整的项目吧
 
