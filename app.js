@@ -36,7 +36,7 @@ console.log("Service is start , Port in :" + port);
 // index page 
 app.get('/', function (req, res) {
 
-	//直接调用模型，在回调方法内拿到返回的movies这个数组
+	//直接调用模型，在回调方法中内拿到返回的数组movies
 	Movie.fetch(function (err, movies) {
 		if (err) {
 			console.log(err);
