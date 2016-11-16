@@ -86,7 +86,7 @@ app.get('/admin/movie', function (req, res) {
 
 
 //admin update movie
-// 匹配到update/:id，这个URL地址过来就是要更新这个地址的
+// 匹配到 update/:id，如果是从这个URL地址过来的，那么是需要更新这个地址
 app.get('/admin/update/:id', function (req, res) {
 
 	//拿到id，并判断如果id存在，就拿到这部电影
