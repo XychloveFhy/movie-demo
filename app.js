@@ -42,7 +42,7 @@ app.get('/', function (req, res) {
 			console.log(err);
 		}
 
-		//渲染首页这个模板，同时把查询到的电影列表赋值给movies这个key
+		//渲染首页，同时把查询到的电影列表（key）赋值给movies
 		res.render('index', {
 			title: 'demo1 首页1',
 			movies: movies
