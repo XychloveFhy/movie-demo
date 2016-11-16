@@ -135,7 +135,7 @@ app.post('/admin/movie/new', function (req, res) {
 			}
 			
 
-			//用post过来的数据里面更新过的字段来替换掉老的这条电影数据
+			// 用post传过来的 数据里面更新过的字段 来替换掉 老的这条电影数据
 			// extend方法 用另外一个对象里面新的字段替换掉老的里面对应的字段（查询的目标，新的字段放在第二个位置）
 			_movie = _.extend(movie, movieObj);
 	
