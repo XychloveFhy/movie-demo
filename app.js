@@ -89,7 +89,7 @@ app.get('/admin/movie', function (req, res) {
 // 匹配到 update/:id，如果是从这个URL地址过来的，那么是需要更新这个地址
 app.get('/admin/update/:id', function (req, res) {
 
-	//拿到id，并判断如果id存在，就拿到这部电影
+	//拿到id，如果id存在，就渲染
 	var id = req.params.id;
 	if (id) {
 		Movie.findById(id, function (err, movie) {
