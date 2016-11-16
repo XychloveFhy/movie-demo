@@ -1,7 +1,7 @@
 var mongoose = require('mongoose')
 
 var MovieSchema = new mongoose.Schema({
-	doctor: String,
+    doctor: String,
     title: String,
     language: String,
     country: String,
