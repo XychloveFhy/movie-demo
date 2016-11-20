@@ -1,5 +1,5 @@
 var express = require('express');   
-var jade = require('jade');
+var jade = require('jade'); 
 var mongoose = require('mongoose');
 var _ = require('underscore');
 var Movie = require('./models/movie');
