@@ -1,6 +1,6 @@
-## a MovieDemo by node(express + mongodb + jade)
+## a MovieDemo by node
 
-练手项目，也算是第一个比较完整的项目吧
+练手项目，也算是第一个比较完整的项目吧，项目基于 express + mongodb + jade
 
 基本路由也能跑通，注释很全，几乎涵盖了各个路由的设置，作用，和所涉及的到一些模块的方法使用等
 
