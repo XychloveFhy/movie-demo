@@ -13,7 +13,7 @@
 启动数据库`mongod`
 
 ```js
-$ app.js
+node app.js
 ```
 
 问题贴，详情见：<a href="http://hanekaoru.com/?p=1367" target="_blank">遇到的相关问题汇总</a>
