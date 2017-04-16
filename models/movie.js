@@ -1,5 +1,9 @@
-var mongoose = require('mongoose');
-var MovieSchema = require('../schemas/movie');
-var Movie = mongoose.model('Movie',MovieSchema);
+var mongoose = require("mongoose");
 
-module.exports = Movie;
+//引入 "../schemas/movie.js" 导出的模式模块
+var movieSchema = require("../schemas/movie.js");
+
+// 编译生成 movie 模型
+var movie = mongoose.model("movie", movieSchema);
+
+module.exports = movie;

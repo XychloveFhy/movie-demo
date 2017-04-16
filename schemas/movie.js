@@ -1,13 +1,14 @@
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
 
-var MovieSchema = new mongoose.Schema({
-    doctor: String,
+var movieSchema = new mongoose.Schema({
     title: String,
+    doctor: String,
     language: String,
     country: String,
-    year: String,
     summary: String,
+    flash: String,
     poster: String,
+    year: Number,
     meta: {
         createAt: {
             type: Date,
@@ -16,13 +17,12 @@ var MovieSchema = new mongoose.Schema({
         updateAt: {
             type: Date,
             default: Date.now()
-        }
+        },
     }
-
 });
 
-
-MovieSchema.pre('save', function (next) {
+// movieSchema.pre 表示每次存储数据之前都先调用这个方法
+movieSchema.pre('save', function (next) {
     if (this.isNew) {
         this.meta.createAt = this.meta.updateAt = Date.now();
     } else {
@@ -31,18 +31,20 @@ MovieSchema.pre('save', function (next) {
     next();
 });
 
-MovieSchema.statics = {
+// movieSchema 模式的静态方法
+movieSchema.statics = {
     fetch: function (cb) {
         return this
             .find({})
             .sort('meta.updateAt')
-            .exec(cb);
+            .exec(cb)
     },
     findById: function (id, cb) {
         return this
-            .findOne({_id: id})
-            .exec(cb);
+            .findOne({ _id: id })
+            .exec(cb)
     }
-};
+}
 
-module.exports = MovieSchema;
+module.exports = movieSchema;
+
